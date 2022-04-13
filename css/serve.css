@@ -1,0 +1,835 @@
+html {
+  font-family: "NotoSanskr", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+}
+
+.menutop-banner .menubanner-img {
+  background: url("../image/menu-babber.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  padding-top: 6vh;
+}
+/* width: 1300px;
+margin: 0 auto;
+1123 */
+.menubanner-txt {
+  padding: 20vh 0 20vh 18vw;
+}
+.introduction{
+  width: 1300px;
+  margin: 0 auto;
+}
+.menutop-banner .menubanner-txt h2 {
+  font-size: 2.625rem;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  color: #7b5e31;
+}
+
+.menutop-banner .menubanner-txt h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #a88858;
+  display: block;
+  position: absolute;
+  top: 32vh;
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.menutop-banner .menubanner-txt h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #7b5e31;
+  opacity: 0.8;
+  position: relative;
+  margin: 30px 0 10px;
+}
+
+.menutop-banner .menubanner-txt p {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #9e7d4b;
+  position: relative;
+}
+
+.menu-box {
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.menu-box .menu-images .menu-img h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 150px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list li {
+  width: 100%;
+}
+
+.menu-list .dessert {
+  width: 95%;
+  height: 350px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 70px;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #f8f2e7;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.menu-list .dessert:hover .title {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.menu-list .dessert:hover img {
+  filter: blur(2px);
+  transition: 0.5s;
+}
+
+.menu-list .dessert .title {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  -webkit-transform: translateY(65%);
+  transform: translateY(65%);
+  transition: 1s;
+  box-shadow: 3px 5px 5px 1px rgb(150, 150, 150);
+}
+
+.menu-list .dessert img {
+  width: 100%;
+}
+
+.menu-list .dessert h2 {
+  display: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.menu-list .dessert .title h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  /* opacity: 0; */
+}
+.menu-list .dessert h3 strong {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+}
+
+.menu-list .dessert p {
+  width: 70%;
+  font-size: 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 0 0;
+  margin-top: 19px;
+  font-weight: 600;
+}
+
+.menu-box .menu-images {
+  font-size: 0;
+}
+
+.menu-box .menu-images label {
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 100px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.menu-box .menu-images input[type="radio"] {
+  display: none;
+}
+
+.menu-box .menu-images input[type="radio"] + label {
+  display: inline-block;
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.menu-box .menu-images input[type="radio"]:checked + label {
+  color: rgb(206, 158, 69);
+  border-bottom: 2px solid rgba(206, 158, 69, 0.5);
+}
+
+.menu-box .menu-images .menu-img {
+  display: none;
+}
+
+.menu-box .menu-images input[id="tab01"]:checked ~ .coffee-list,
+.menu-box .menu-images input[id="tab02"]:checked ~ .latte-list,
+.menu-box .menu-images input[id="tab03"]:checked ~ .repeat01,
+.menu-box .menu-images input[id="tab04"]:checked ~ .repeat02 {
+  display: block;
+}
+
+.menu-box .menu-images .repeat01 {
+  background: rgb(255, 153, 0);
+}
+
+.menu-box .menu-images .repeat02 {
+  background: rgb(0, 30, 255);
+}
+
+.menu-box .menu-images .repeat03 {
+  background: rgb(255, 0, 162);
+}
+
+/* 할리스몰 */
+.menubottom-banner .menubottom_banner-img {
+  background: url("../image/bottombanner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+
+.menubottom_banner-txt {
+  padding: 20vh 18vw 20vh 0;
+  text-align: right;
+}
+
+.menubottom-banner .menubottom_banner-txt h2 {
+  font-size: 2.625rem;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  color: #7b5e31;
+  position: relative;
+}
+
+.menubottom-banner .menubottom_banner-txt p {
+  font-size: 1.375rem;
+  color: #7b5e31;
+  opacity: 0.8;
+  position: relative;
+  margin: 40px 0 25px;
+  font-weight: bold;
+}
+
+.menubottom-banner h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #a88858;
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 0;
+}
+.menubottom-banner .buttom-button a {
+  padding: 10px 35px;
+  border: 1px solid #7b5e31;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #7b5e31;
+  transition: all 0.35s;
+  font-weight: bold;
+}
+
+.menubottom-banner .buttom-button a:hover {
+  background-color: #7b5e31;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 서브페이지(멤버십페이지) */
+
+/* 상단 베너 이미지 */
+.top-banner {
+  text-align: center;
+}
+
+.top-banner .banner-img {
+  text-align: center;
+}
+
+.membershiph-top {
+  background: url("../image/topimg.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-banner .banner-img h2 {
+  font-size: 2.375rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 할리스 스마트 오더 */
+.introduction h2 {
+  padding: 100px 0 60px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+.introduction strong {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d91f2a;
+  padding-bottom: 12px;
+  display: block;
+}
+
+.introduction h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.introduction p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: block;
+  line-height: 1.4;
+  padding-bottom: 50px;
+}
+
+.introduction p span {
+  color: #d91f2a;
+  font-weight: 900;
+}
+
+/* 할리스 스마트 오더 이미지 */
+.order-inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.order-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0 150px 0;
+}
+
+.order-img img {
+  width: 100%;
+  display: block;
+}
+
+.order-img .smart {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.order-img .smart:last-child {
+  margin-right: 0;
+}
+
+.order-img .smart:hover .title {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.order-img .smart:hover img {
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+.order-img .smart .title {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 100%;
+  /* height: 233px; */
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(90%);
+  transform: translateY(90%);
+  transition: 0.5s;
+  padding: 60px 0;
+}
+
+.order-img h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.order-img p {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding-bottom: 10px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* 앱이용법 */
+.How-use {
+  background: #f7f8f3;
+  position: relative;
+}
+
+.How-use .inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+input[name="tab"] {
+  display: none;
+}
+.slide-wrap {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 300%;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 0.5s;
+}
+
+.slide-item {
+  flex: 1 0 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn {
+  margin: 20px 0 70px 70px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.btn label {
+  width: 13px;
+  height: 13px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: #777;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn label:last-child {
+  margin-right: 0;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background: #d91f2a;
+  font-weight: bold;
+}
+
+input[id="tab1"]:checked ~ .slide-wrap .slider {
+  left: 0;
+}
+
+input[id="tab2"]:checked ~ .slide-wrap .slider {
+  left: -100%;
+}
+
+input[id="tab3"]:checked ~ .slide-wrap .slider {
+  left: -200%;
+}
+
+.slide-item {
+  display: block;
+  position: relative;
+}
+
+.slide-item .user {
+  padding: 70px 70px;
+}
+
+.slide-item .user h3 {
+  font-size: 1rem;
+  color: #757575;
+  font-weight: 600;
+}
+
+.slide-item .user h3 span {
+  color: #d91f2a;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.slide-item .user h2 {
+  font-size: 2rem;
+  margin: 20px 0 20px;
+  font-weight: 900;
+}
+
+.slide-item .user h2 span {
+  font-size: 2.75rem;
+}
+
+.slide-item .user p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #757575;
+  font-weight: 600;
+}
+
+.slide-item .user p span {
+  color: #d91f2a;
+  font-weight: 900;
+  font-size: 1.125rem;
+}
+
+.slide-item .user-icon {
+  padding: 0 70px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.slide-item .user-icon2 {
+  padding: 0 70px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.slide-item .user-icon nav,
+.slide-item .user-icon2 nav {
+  margin-right: 20px;
+}
+
+.slide-item .user-icon nav p,
+.slide-item .user-icon2 nav p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+
+.slide-item .user-icon2 img {
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.slide-item .user-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.slide-item .user-mockup img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 220px;
+}
+
+/* 멤버십 등급 */
+.member-class {
+  line-height: 1.2;
+}
+
+.member-class .inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.member-class h2 {
+  padding: 100px 0 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.class-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #777;
+  border-bottom: 3px solid #777;
+  margin-bottom: 100px;
+}
+
+.class-container .class {
+  width: 25%;
+  height: 450px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.class-txtbox {
+  background: #f9f9f9;
+}
+
+.class-container .class:nth-child(4) {
+  border-right: 0;
+}
+
+.class-container .class h3 {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.class-container .class .silver {
+  color: rgb(153, 153, 153);
+}
+
+.class-container .class .gold {
+  color: rgb(213, 181, 0);
+}
+
+.class-container .class .red {
+  color: red;
+}
+
+.class-container .class .diamond {
+  color: #30494b;
+}
+.class-container .class strong {
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.class-container .class h4 {
+  margin: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.class-container .class p {
+  margin: 30px;
+}
+
+.class-container .class p span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* 유의사항 */
+
+.warning {
+  background: #f7f8f3;
+  padding: 50px 0;
+}
+
+.warning .inner {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.warning h3 {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.625rem;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.warning-title {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.warning-title p {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* 할리스is상단 베너 */
+/* .istop-banner {
+  text-align: center;
+}
+
+.istop-banner .isbanner-img {
+  background: url(/image/hollysis.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.istop-banner .isbanner-img .cover {
+  width: 100%;
+  height: 638px;
+  background-color: black;
+  opacity: 0.75;
+  z-index: 1;
+  position: absolute;
+}
+
+.istop-banner h1 {
+  font-size: 38px;
+  padding: 300px 0 300px 0;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+}
+
+.ismenu-box {
+  padding: 100px 0;
+}
+
+.ismenu-box ul {
+  display: flex;
+  justify-content: center;
+}
+
+.ismenu-box ul li {
+  width: 170px;
+  padding: 15px 0;
+  list-style: none;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Explanation {
+  width: 100%;
+}
+
+.Explanation h1 {
+  padding-bottom: 80px;
+  font-size: 32px;
+}
+
+.Explanation h2 {
+  padding-bottom: 30px;
+  font-size: 28px;
+}
+
+.Explanation h2 span {
+  font-size: 32px;
+  color: #d91f2a;
+}
+
+.Explanation h3 {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.cont-difference {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.difference {
+  text-align: left;
+  padding-right: 50px;
+}
+
+.difference-img img {
+  width: 620px;
+  height: 350px;
+}
+
+.Explanation-tow {
+  width: 100%;
+}
+
+.Explanation-tow h2 {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.contbox-difference {
+  display: flex;
+  padding-bottom: 150px;
+}
+
+.box-difference {
+  padding-left: 50px;
+}
+
+.Explanation,
+.Explanation-tow p {
+  font-size: 17px;
+}
+
+.histort .histort-txt h1 {
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+
+.histort .histort-txt h2 {
+  font-size: 18px;
+}
+
+.hollys-histortlogo {
+  background-color: #f7f8f3;
+}
+
+.histortlogo h1 {
+  font-size: 32px;
+  padding: 50px 0 30px 0;
+}
+
+.histortlogo h2 {
+  font-size: 18px;
+}
+
+.hollys-histortlogo .histortlogo-img {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.hollys-histortlogo .histortlogo-img img {
+  width: 80%;
+  padding: 50px 0 20px 0;
+}
+
+.hollys-histortlogo .histortlogo-img .logo-img {
+  text-align: center;
+} */
